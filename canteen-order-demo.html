@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Order home-style Nigerian canteen food from Adewoye Adebola Canteen & Chop House — grills, mains, soups, sides and drinks, ready for pickup or delivery.">
+<meta name="theme-color" content="#2B4A3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%232B4A3E%27/%3E%3Crect%20x%3D%273%27%20y%3D%273%27%20width%3D%2758%27%20height%3D%2758%27%20rx%3D%2711%27%20fill%3D%27none%27%20stroke%3D%27%23E3A72F%27%20stroke-width%3D%272.5%27/%3E%3Ctext%20x%3D%2732%27%20y%3D%2741%27%20font-family%3D%27Georgia%2C%20serif%27%20font-weight%3D%27700%27%20font-size%3D%2724%27%20fill%3D%27%23E3A72F%27%20text-anchor%3D%27middle%27%3EAA%3C/text%3E%3C/svg%3E">
+<title>Adewoye Adebola Canteen &amp; Chop House — Order Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-deep:#2B4A3E;
+    --green-mid:#3C6656;
+    --cream:#F7F1DE;
+    --mustard:#E3A72F;
+    --chili:#C0392B;
+    --charcoal:#211D17;
+    --paper:#FCF8EC;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  ::selection{background:var(--mustard); color:var(--charcoal);}
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--mustard); outline-offset:2px;
+  }
+  body{
+    background:var(--cream);
+    color:var(--charcoal);
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Anton', sans-serif; letter-spacing:0.5px; text-transform:uppercase;}
+
+  /* HEADER */
+  header{
+    background:var(--green-deep);
+    color:var(--cream);
+    padding:22px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+    position:sticky; top:0; z-index:50;
+    border-bottom:4px solid var(--mustard);
+    box-shadow:0 2px 12px rgba(0,0,0,0.15);
+  }
+  .logo{display:flex; align-items:center; gap:12px;}
+  .logo-mark{
+    width:42px; height:42px; border-radius:50%;
+    background:var(--mustard); color:var(--green-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Anton', sans-serif; font-size:20px;
+    box-shadow:0 0 0 2px rgba(247,241,222,0.25);
+  }
+  .logo-text h1{font-size:22px; line-height:1;}
+  .logo-text span{font-size:11px; letter-spacing:2px; opacity:0.75; text-transform:uppercase;}
+  nav a{
+    color:var(--cream); text-decoration:none; margin-left:26px; font-size:14px; font-weight:600;
+    position:relative; padding-bottom:3px; transition:color 0.15s ease;
+  }
+  nav a::after{
+    content:""; position:absolute; left:0; bottom:0; width:0; height:2px;
+    background:var(--mustard); transition:width 0.2s ease;
+  }
+  nav a:hover{color:var(--mustard);}
+  nav a:hover::after{width:100%;}
+
+  /* HERO */
+  .hero{
+    background:
+      repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 40px),
+      var(--green-deep);
+    color:var(--paper);
+    padding:70px 32px 60px;
+    text-align:left;
+  }
+  .hero-inner{max-width:640px;}
+  .eyebrow{
+    display:inline-block; background:var(--chili); color:var(--paper);
+    font-size:12px; font-weight:700; letter-spacing:1.5px;
+    padding:5px 12px; border-radius:2px; margin-bottom:18px; text-transform:uppercase;
+  }
+  .hero h2{font-size:48px; line-height:1.05; margin-bottom:16px;}
+  .hero p{font-size:17px; line-height:1.6; opacity:0.85; max-width:480px; margin-bottom:26px;}
+  .hero-meta{display:flex; gap:28px; font-family:'IBM Plex Mono', monospace; font-size:13px; opacity:0.8;}
+  .hero-meta div span{display:block; color:var(--mustard); font-weight:600;}
+
+  /* LAYOUT */
+  .layout{
+    display:grid; grid-template-columns:1fr 340px;
+    max-width:1180px; margin:0 auto; gap:0;
+    align-items:start;
+  }
+  main{padding:40px 32px;}
+  .station{margin-bottom:44px;}
+  .station-head{
+    display:flex; align-items:baseline; gap:14px; margin-bottom:18px;
+    border-bottom:2px solid var(--charcoal);
+    padding-bottom:8px;
+  }
+  .station-head h3{font-size:24px; color:var(--green-deep);}
+  .station-head .count{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chili);}
+
+  .dish{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:14px 0; border-bottom:1px dashed rgba(33,29,23,0.2);
+    gap:16px;
+  }
+  .dish-photo{
+    width:64px; height:64px; border-radius:6px; flex-shrink:0;
+    background:linear-gradient(135deg, var(--green-mid), var(--green-deep));
+    display:flex; align-items:center; justify-content:center;
+    font-size:24px; box-shadow:inset 0 0 0 1px rgba(255,255,255,0.15);
+    overflow:hidden;
+  }
+  .dish-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+  .dish-main{display:flex; gap:14px; align-items:center; flex:1; min-width:0;}
+  .dish-info h4{font-size:16px; font-weight:600; margin-bottom:4px;}
+  .dish-info p{font-size:13px; color:#5b5346; line-height:1.4; max-width:360px;}
+  .dish-tag{
+    display:inline-block; font-size:10px; font-weight:700; letter-spacing:1px;
+    color:var(--chili); border:1px solid var(--chili); border-radius:2px;
+    padding:1px 6px; margin-top:6px; text-transform:uppercase;
+  }
+  .dish-right{text-align:right; flex-shrink:0;}
+  .dish-price{font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:15px; display:block; margin-bottom:8px;}
+  .add-btn{
+    background:var(--green-deep); color:var(--cream); border:none;
+    padding:7px 14px; border-radius:2px; font-size:12px; font-weight:700;
+    letter-spacing:0.5px; cursor:pointer; text-transform:uppercase;
+    transition:background 0.15s ease, transform 0.1s ease;
+  }
+  .add-btn:hover{background:var(--chili);}
+  .add-btn:active{transform:scale(0.96);}
+
+  /* ORDER TICKET (signature element) */
+  .ticket-wrap{
+    padding:40px 24px 40px 0;
+    position:sticky; top:96px; align-self:start;
+  }
+  .ticket{
+    background:var(--paper);
+    border:1px solid #ddd4bb;
+    box-shadow:0 10px 24px rgba(33,29,23,0.12);
+    font-family:'IBM Plex Mono', monospace;
+    padding:22px 20px 0;
+    position:relative;
+  }
+  .ticket::before{
+    content:"";
+    position:absolute; top:-1px; left:0; right:0; height:10px;
+    background-image: radial-gradient(circle 5px at 10px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 30px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 50px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 70px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 90px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 110px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 130px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 150px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 170px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 190px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 210px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 230px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 250px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 270px 0, transparent 5px, var(--cream) 6px),
+                       radial-gradient(circle 5px at 290px 0, transparent 5px, var(--cream) 6px);
+    background-size:20px 10px;
+  }
+  .ticket-head{text-align:center; margin-bottom:14px;}
+  .ticket-head h4{font-size:14px; font-weight:600; letter-spacing:2px;}
+  .ticket-head p{font-size:10px; color:#8a8168; margin-top:2px;}
+  .ticket-divider{border:none; border-top:1px dashed #b8ae91; margin:12px 0;}
+  #ticket-items{min-height:60px; max-height:260px; overflow-y:auto; padding-right:2px;}
+  .empty-ticket{font-size:12px; color:#8a8168; text-align:center; padding:20px 0;}
+  .ticket-line{
+    display:flex; align-items:center; justify-content:space-between; font-size:12.5px;
+    padding:7px 0; gap:8px;
+  }
+  .ticket-line .qty{color:var(--chili); font-weight:600;}
+  .ticket-line .name{flex:1; padding:0 6px; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .qty-stepper{display:flex; align-items:center; gap:6px; flex-shrink:0;}
+  .qty-stepper button{
+    width:20px; height:20px; border-radius:50%; border:1px solid var(--charcoal);
+    background:var(--paper); color:var(--charcoal); font-family:'IBM Plex Mono', monospace;
+    font-size:13px; line-height:1; cursor:pointer; padding:0;
+    display:flex; align-items:center; justify-content:center;
+    transition:background 0.15s ease, color 0.15s ease;
+  }
+  .qty-stepper button:hover{background:var(--chili); color:var(--paper); border-color:var(--chili);}
+  .qty-stepper button:active{transform:scale(0.9);}
+  .qty-stepper .qty-num{min-width:14px; text-align:center; font-weight:600; color:var(--charcoal);}
+  .ticket-line .line-price{min-width:64px; text-align:right; flex-shrink:0;}
+  .ticket-actions{display:flex; justify-content:flex-end; padding-top:6px;}
+  .clear-cart-btn{
+    background:none; border:none; cursor:pointer;
+    font-family:'IBM Plex Mono', monospace; font-size:11px;
+    color:#a89e88; text-decoration:underline; letter-spacing:0.3px;
+    padding:2px 0; transition:color 0.15s ease;
+  }
+  .clear-cart-btn:hover{color:var(--chili);}
+  .clear-cart-btn:disabled{opacity:0.4; cursor:default; text-decoration:none;}
+  .ticket-totals{padding:14px 0 18px;}
+  .ticket-totals .row{display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:6px; color:#5b5346;}
+  .ticket-totals .row.total{
+    color:var(--charcoal); font-weight:700; font-size:15px;
+    border-top:1px dashed #b8ae91; padding-top:10px; margin-top:8px;
+  }
+  .ticket-customer{padding:14px 0 4px;}
+  .ticket-customer label{
+    display:block; font-family:'IBM Plex Mono', monospace; font-size:10.5px;
+    color:#8a8168; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;
+  }
+  .ticket-customer input[type="text"], .ticket-customer input[type="tel"]{
+    display:block; width:100%; margin-top:5px;
+    background:none; border:none; border-bottom:1px dashed #b8ae91;
+    font-family:'Inter', sans-serif; font-size:14px; color:var(--charcoal);
+    padding:5px 2px; outline:none;
+  }
+  .ticket-customer input[type="text"]:focus, .ticket-customer input[type="tel"]:focus{
+    border-bottom:1px solid var(--chili);
+  }
+  .fulfil-toggle{display:flex; gap:18px; margin-top:4px; margin-bottom:6px;}
+  .fulfil-option{
+    display:flex; align-items:center; gap:6px;
+    font-size:12.5px; text-transform:none; letter-spacing:0; color:var(--charcoal);
+    margin-bottom:0; cursor:pointer;
+  }
+  .fulfil-option input{accent-color:var(--chili); cursor:pointer;}
+
+  .place-order{
+    width:100%; background:var(--chili); color:var(--paper); border:none;
+    padding:13px; font-family:'Inter',sans-serif; font-weight:700; font-size:13px;
+    letter-spacing:1px; text-transform:uppercase; cursor:pointer; margin-bottom:20px;
+    border-radius:2px; transition:background 0.15s ease;
+  }
+  .place-order:hover{background:#a63125;}
+  .ticket-foot{
+    text-align:center; font-size:9.5px; color:#b8ae91; padding-bottom:16px; letter-spacing:1px;
+  }
+
+  /* ORDER CONFIRMATION */
+  .confirm-overlay{
+    position:fixed; inset:0; z-index:300;
+    background:rgba(33,29,23,0.6);
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; visibility:hidden; padding:20px;
+    transition:opacity 0.2s ease, visibility 0.2s ease;
+  }
+  .confirm-overlay.open{opacity:1; visibility:visible;}
+  .confirm-card{
+    background:var(--paper); width:100%; max-width:360px;
+    border-radius:10px; padding:32px 26px 26px; text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+    transform:translateY(16px); transition:transform 0.25s ease;
+  }
+  .confirm-overlay.open .confirm-card{transform:translateY(0);}
+  .confirm-check{
+    width:56px; height:56px; border-radius:50%; margin:0 auto 16px;
+    background:var(--green-deep); color:var(--mustard);
+    display:flex; align-items:center; justify-content:center; font-size:28px;
+  }
+  .confirm-card h3{font-size:19px; color:var(--charcoal); margin-bottom:8px; text-transform:none; letter-spacing:0; font-family:'Inter',sans-serif; font-weight:700;}
+  .confirm-card .confirm-ticket{
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--chili);
+    letter-spacing:1px; margin-bottom:14px;
+  }
+  .confirm-card p{font-size:13.5px; color:#5b5346; line-height:1.6; margin-bottom:22px;}
+  .confirm-close{
+    width:100%; background:var(--green-deep); color:var(--cream); border:none;
+    padding:12px; font-family:'Inter',sans-serif; font-weight:700; font-size:13px;
+    letter-spacing:0.5px; text-transform:uppercase; cursor:pointer; border-radius:2px;
+    transition:background 0.15s ease;
+  }
+  .confirm-close:hover{background:var(--chili);}
+
+  .confirm-check-fail{background:var(--chili); color:var(--paper);}
+  .confirm-manual-link{
+    display:block; margin-top:12px; font-size:12.5px;
+    color:#5b5346; text-decoration:underline;
+  }
+  .confirm-manual-link:hover{color:var(--chili);}
+  .confirm-fail-block{display:none;}
+  #confirm-overlay.state-fail .confirm-success-block{display:none;}
+  #confirm-overlay.state-fail .confirm-fail-block{display:block;}
+
+  footer{
+    background:var(--charcoal); color:#a89e88; text-align:center;
+    padding:26px 20px; font-size:12.5px;
+  }
+  footer strong{color:var(--cream);}
+
+  /* HOURS & LOCATION */
+  .visit{
+    background:var(--green-deep); color:var(--paper);
+    padding:52px 32px;
+    border-top:4px solid var(--mustard);
+    border-bottom:4px solid var(--mustard);
+  }
+  .visit-inner{
+    max-width:1180px; margin:0 auto;
+    display:grid; grid-template-columns:1fr 1fr; gap:48px;
+  }
+  .visit-col h3{font-size:22px; color:var(--mustard); margin-bottom:18px;}
+  .hours-list{list-style:none; font-family:'IBM Plex Mono', monospace; font-size:14px;}
+  .hours-list li{
+    display:flex; justify-content:space-between;
+    padding:9px 0; border-bottom:1px dashed rgba(247,241,222,0.2);
+  }
+  .hours-list li span:first-child{opacity:0.85;}
+  .hours-list li span:last-child{font-weight:600;}
+  .visit-address{font-size:17px; font-weight:600; margin-bottom:14px; line-height:1.4;}
+  .visit-detail{font-size:14px; opacity:0.85; line-height:1.7;}
+  .visit-map-note{
+    display:inline-block; margin-top:16px; padding:8px 14px;
+    border:1px solid rgba(247,241,222,0.35); border-radius:2px;
+    font-size:12.5px; font-family:'IBM Plex Mono', monospace; letter-spacing:0.5px;
+  }
+
+  .mobile-cart-bar{display:none;}
+
+  @media (max-width: 860px){
+    .visit-inner{grid-template-columns:1fr; gap:32px;}
+    .visit{padding:40px 24px;}
+    .layout{grid-template-columns:1fr;}
+    .hero{padding:56px 24px 48px;}
+    .hero h2{font-size:36px;}
+    nav{display:none;}
+    main{padding:32px 24px 100px;}
+
+    /* Ticket becomes a slide-up panel, triggered by the fixed cart bar */
+    .ticket-wrap{
+      position:fixed; inset:0; top:auto;
+      padding:0; margin:0; z-index:200;
+      display:flex; align-items:flex-end; justify-content:center;
+      background:rgba(33,29,23,0.55);
+      opacity:0; visibility:hidden;
+      transition:opacity 0.2s ease, visibility 0.2s ease;
+    }
+    .ticket-wrap.open{opacity:1; visibility:visible;}
+    .ticket{
+      width:100%; max-width:520px; max-height:78vh; overflow-y:auto;
+      border-radius:16px 16px 0 0; padding-top:28px;
+      transform:translateY(100%);
+      transition:transform 0.28s ease;
+      box-shadow:0 -10px 30px rgba(0,0,0,0.25);
+    }
+    .ticket-wrap.open .ticket{transform:translateY(0);}
+    .ticket-close{
+      position:absolute; top:8px; right:10px; z-index:2;
+      background:none; border:none; font-size:22px; line-height:1;
+      color:var(--charcoal); cursor:pointer; width:38px; height:38px;
+    }
+
+    .mobile-cart-bar{
+      display:flex; align-items:center; justify-content:space-between;
+      position:fixed; bottom:0; left:0; right:0; z-index:150;
+      background:var(--green-deep); color:var(--cream);
+      padding:15px 20px; box-shadow:0 -4px 18px rgba(0,0,0,0.22);
+      cursor:pointer; border-top:3px solid var(--mustard);
+    }
+    .mobile-cart-bar.hidden{display:none;}
+    .mobile-cart-bar .bar-info{display:flex; flex-direction:column; font-family:'IBM Plex Mono', monospace;}
+    .mobile-cart-bar .bar-info span{font-size:11px; opacity:0.75; letter-spacing:0.5px;}
+    .mobile-cart-bar .bar-info strong{font-size:17px; font-family:'Inter',sans-serif; color:var(--mustard);}
+    .mobile-cart-bar .bar-cta{
+      background:var(--chili); padding:11px 18px; border-radius:22px;
+      font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px;
+      white-space:nowrap;
+    }
+  }
+
+  @media (max-width: 480px){
+    header{padding:16px 18px;}
+    .logo-mark{width:36px; height:36px; font-size:16px;}
+    .logo-text h1{font-size:18px;}
+    .logo-text span{font-size:9.5px;}
+    .hero{padding:44px 18px 36px;}
+    .hero h2{font-size:26px;}
+    .hero p{font-size:14.5px;}
+    .hero-meta{flex-direction:column; gap:8px;}
+    main{padding:26px 16px 100px;}
+    .dish{gap:10px;}
+    .dish-main{gap:10px;}
+    .dish-photo{width:50px; height:50px; font-size:20px; border-radius:5px;}
+    .dish-info h4{font-size:14.5px;}
+    .dish-info p{font-size:12px; max-width:100%;}
+    .dish-price{font-size:13.5px;}
+    .add-btn{padding:8px 12px; font-size:11px; min-height:34px;}
+    .station-head h3{font-size:20px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">AA</div>
+    <div class="logo-text">
+      <h1>Adewoye Adebola</h1>
+      <span>Canteen &amp; Chop House</span>
+    </div>
+  </div>
+  <nav>
+    <a href="#grills">Grills</a>
+    <a href="#mains">Mains &amp; Soups</a>
+    <a href="#sides">Sides</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#visit">Hours &amp; Location</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Kitchen open now</span>
+    <h2>Order today's pot,<br>ready in 20 minutes.</h2>
+    <p>Home-style Nigerian canteen food, dished up fresh. Pick your plate, watch your ticket fill up, send it straight to the kitchen.</p>
+    <div class="hero-meta">
+      <div>Hours<span>9:00 AM – 8:00 PM</span></div>
+      <div>Pickup<span>Opp. OAU Campus Gate</span></div>
+      <div>Today's soup<span>Egusi &amp; Ogbono</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <main>
+
+    <div class="station" id="grills">
+      <div class="station-head"><h3>Grills &amp; Suya</h3><span class="count">06 items</span></div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍢</div>
+          <div class="dish-info">
+          <h4>Beef Suya (6 sticks)</h4>
+          <p>Charcoal-grilled beef strips, dry-rubbed in yaji spice, sliced onion &amp; tomato.</p>
+          <span class="dish-tag">Spicy</span>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,500</span>
+          <button class="add-btn" onclick="addItem('Beef Suya (6 sticks)', 2500)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍢</div>
+          <div class="dish-info">
+          <h4>Grilled Chicken Half</h4>
+          <p>Marinated overnight in pepper &amp; herbs, grilled over open flame.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦3,200</span>
+          <button class="add-btn" onclick="addItem('Grilled Chicken Half', 3200)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍖</div>
+          <div class="dish-info">
+          <h4>Peppered Goat Meat</h4>
+          <p>Slow-cooked goat tossed in fresh pepper sauce and bell peppers.</p>
+          <span class="dish-tag">Spicy</span>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦3,000</span>
+          <button class="add-btn" onclick="addItem('Peppered Goat Meat', 3000)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🐟</div>
+          <div class="dish-info">
+          <h4>Fish Suya (Titus)</h4>
+          <p>Whole grilled fish, deboned, seasoned with yaji spice mix.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦3,500</span>
+          <button class="add-btn" onclick="addItem('Fish Suya (Titus)', 3500)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍗</div>
+          <div class="dish-info">
+          <h4>Grilled Turkey Wings</h4>
+          <p>Pepper-marinated turkey wings, char-grilled and basted in pepper sauce.</p>
+          <span class="dish-tag">Popular</span>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦3,300</span>
+          <button class="add-btn" onclick="addItem('Grilled Turkey Wings', 3300)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🦐</div>
+          <div class="dish-info">
+          <h4>Skewered Prawns</h4>
+          <p>Jumbo prawns grilled on skewers with garlic-pepper glaze.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦4,000</span>
+          <button class="add-btn" onclick="addItem('Skewered Prawns', 4000)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="station" id="mains">
+      <div class="station-head"><h3>Mains &amp; Soups</h3><span class="count">07 items</span></div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍗</div>
+          <div class="dish-info">
+          <h4>Jollof Rice &amp; Chicken</h4>
+          <p>Smoky party-style jollof, one piece of fried chicken, side of coleslaw.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,800</span>
+          <button class="add-btn" onclick="addItem('Jollof Rice & Chicken', 2800)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍢</div>
+          <div class="dish-info">
+          <h4>Fried Rice &amp; Beef</h4>
+          <p>Mixed vegetable fried rice with liver and grilled beef.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,700</span>
+          <button class="add-btn" onclick="addItem('Fried Rice & Beef', 2700)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🥘</div>
+          <div class="dish-info">
+          <h4>Amala &amp; Ewedu with Gbegiri</h4>
+          <p>Yam flour swallow served with two soups and assorted meat.</p>
+          <span class="dish-tag">Chef's pick</span>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,600</span>
+          <button class="add-btn" onclick="addItem('Amala & Ewedu with Gbegiri', 2600)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🥘</div>
+          <div class="dish-info">
+          <h4>Pounded Yam &amp; Egusi</h4>
+          <p>Hand-pounded yam, egusi soup loaded with spinach and assorted meat.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,900</span>
+          <button class="add-btn" onclick="addItem('Pounded Yam & Egusi', 2900)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🥘</div>
+          <div class="dish-info">
+          <h4>Ofada Rice &amp; Ayamase Sauce</h4>
+          <p>Local ofada rice with green pepper sauce, boiled egg &amp; plantain.</p>
+          <span class="dish-tag">Spicy</span>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,800</span>
+          <button class="add-btn" onclick="addItem('Ofada Rice & Ayamase Sauce', 2800)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍚</div>
+          <div class="dish-info">
+          <h4>White Rice &amp; Stew with Chicken</h4>
+          <p>Steamed white rice, rich tomato stew, one piece of chicken.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,500</span>
+          <button class="add-btn" onclick="addItem('White Rice & Stew with Chicken', 2500)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🥘</div>
+          <div class="dish-info">
+          <h4>Semo &amp; Efo Riro</h4>
+          <p>Smooth semolina swallow with spinach vegetable soup and assorted meat.</p>
+        </div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦2,600</span>
+          <button class="add-btn" onclick="addItem('Semo & Efo Riro', 2600)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="station" id="sides">
+      <div class="station-head"><h3>Sides</h3><span class="count">05 items</span></div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍌</div>
+          <div class="dish-info"><h4>Fried Plantain (Dodo)</h4><p>Sweet ripe plantain, pan-fried till golden.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦800</span>
+          <button class="add-btn" onclick="addItem('Fried Plantain (Dodo)', 800)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🧆</div>
+          <div class="dish-info"><h4>Moi Moi</h4><p>Steamed bean pudding with egg, fish flakes &amp; pepper.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦900</span>
+          <button class="add-btn" onclick="addItem('Moi Moi', 900)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🥟</div>
+          <div class="dish-info"><h4>Meat Pie</h4><p>Flaky pastry filled with minced beef, carrots &amp; potato.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦700</span>
+          <button class="add-btn" onclick="addItem('Meat Pie', 700)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🥗</div>
+          <div class="dish-info"><h4>Coleslaw</h4><p>Fresh cabbage &amp; carrot slaw in creamy dressing.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦600</span>
+          <button class="add-btn" onclick="addItem('Coleslaw', 600)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍳</div>
+          <div class="dish-info"><h4>Boiled Yam &amp; Egg Sauce</h4><p>Soft boiled yam with a rich pepper &amp; egg sauce.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦1,200</span>
+          <button class="add-btn" onclick="addItem('Boiled Yam & Egg Sauce', 1200)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="station" id="drinks">
+      <div class="station-head"><h3>Drinks</h3><span class="count">05 items</span></div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍹</div>
+          <div class="dish-info"><h4>Chapman (Large)</h4><p>House-blend fruity mocktail, served chilled.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦1,200</span>
+          <button class="add-btn" onclick="addItem('Chapman (Large)', 1200)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🧃</div>
+          <div class="dish-info"><h4>Zobo</h4><p>Hibiscus drink infused with ginger, pineapple &amp; cloves.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦900</span>
+          <button class="add-btn" onclick="addItem('Zobo', 900)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">💧</div>
+          <div class="dish-info"><h4>Chilled Bottled Water</h4><p>75cl.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦400</span>
+          <button class="add-btn" onclick="addItem('Chilled Bottled Water', 400)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🥤</div>
+          <div class="dish-info"><h4>Soft Drink (Coke / Fanta / Sprite)</h4><p>50cl bottle, served cold.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦500</span>
+          <button class="add-btn" onclick="addItem('Soft Drink', 500)">Add</button>
+        </div>
+      </div>
+
+      <div class="dish">
+        <div class="dish-main">
+          <div class="dish-photo">🍶</div>
+          <div class="dish-info"><h4>Fresh Palm Wine</h4><p>Locally tapped, served chilled in a calabash cup.</p></div>
+        </div>
+        <div class="dish-right">
+          <span class="dish-price">₦1,000</span>
+          <button class="add-btn" onclick="addItem('Fresh Palm Wine', 1000)">Add</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="ticket-wrap" id="ticket-wrap" onclick="closeIfBackdrop(event)">
+    <div class="ticket">
+      <button class="ticket-close" onclick="toggleTicket(false)">✕</button>
+      <div class="ticket-head">
+        <h4>ORDER TICKET</h4>
+        <p id="ticket-time">--:--</p>
+      </div>
+      <hr class="ticket-divider">
+      <div id="ticket-items">
+        <p class="empty-ticket">No items yet.<br>Tap "Add" on any dish.</p>
+      </div>
+      <div class="ticket-actions">
+        <button class="clear-cart-btn" id="clear-cart-btn" onclick="clearCart()" disabled>Clear cart</button>
+      </div>
+      <div class="ticket-totals">
+        <div class="row"><span>Subtotal</span><span id="subtotal">₦0</span></div>
+        <div class="row"><span>Service (5%)</span><span id="service">₦0</span></div>
+        <div class="row total"><span>Total</span><span id="total">₦0</span></div>
+      </div>
+      <hr class="ticket-divider">
+      <div class="ticket-customer">
+        <label>
+          Name
+          <input type="text" id="customer-name" placeholder="Your name" autocomplete="name">
+        </label>
+        <label>
+          Phone
+          <input type="tel" id="customer-phone" placeholder="080..." autocomplete="tel">
+        </label>
+        <div class="fulfil-toggle">
+          <label class="fulfil-option">
+            <input type="radio" name="fulfil" value="Pickup" checked> Pickup
+          </label>
+          <label class="fulfil-option">
+            <input type="radio" name="fulfil" value="Delivery"> Delivery
+          </label>
+        </div>
+      </div>
+      <button class="place-order" onclick="placeOrder()">Send order via WhatsApp</button>
+      <div class="ticket-foot">ADEWOYE ADEBOLA · TICKET #<span id="ticket-num">104</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="visit" id="visit">
+  <div class="visit-inner">
+    <div class="visit-col">
+      <h3>Opening Hours</h3>
+      <ul class="hours-list">
+        <li><span>Monday – Friday</span><span>8:00 AM – 8:00 PM</span></li>
+        <li><span>Saturday</span><span>9:00 AM – 9:00 PM</span></li>
+        <li><span>Sunday</span><span>12:00 PM – 6:00 PM</span></li>
+      </ul>
+    </div>
+    <div class="visit-col">
+      <h3>Find Us</h3>
+      <p class="visit-address">Opposite OAU Campus Gate, Ile-Ife</p>
+      <p class="visit-detail">
+        📞 0814 166 4061<br>
+        Pickup &amp; eat-in available at the counter.<br>
+        Delivery within a 3km radius.
+      </p>
+      <span class="visit-map-note">📍 Opposite OAU Campus Gate, Ile-Ife</span>
+    </div>
+  </div>
+</section>
+
+<div class="confirm-overlay" id="confirm-overlay" onclick="if(event.target.id==='confirm-overlay') closeConfirm()">
+  <div class="confirm-card" id="confirm-card">
+    <div class="confirm-success-block">
+      <div class="confirm-check">✓</div>
+      <h3>Order sent!</h3>
+      <div class="confirm-ticket">TICKET #<span id="confirm-ticket-num">—</span> · <span id="confirm-total">₦0</span></div>
+      <p>Your order was sent to Adewoye Adebola Canteen &amp; Chop House on WhatsApp. They'll confirm it there shortly.</p>
+      <button class="confirm-close" onclick="closeConfirm()">Done</button>
+    </div>
+    <div class="confirm-fail-block">
+      <div class="confirm-check confirm-check-fail">✕</div>
+      <h3>Order didn't send</h3>
+      <p>WhatsApp couldn't open — this usually happens if pop-ups are blocked or WhatsApp isn't set up on this device. Your order is still in your cart.</p>
+      <button class="confirm-close" onclick="retrySend()">Try again</button>
+      <a class="confirm-manual-link" id="confirm-manual-link" href="#" target="_blank" rel="noopener">Or tap here to open WhatsApp manually</a>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-cart-bar hidden" id="mobile-cart-bar" onclick="toggleTicket(true)">
+  <div class="bar-info">
+    <span id="bar-count">0 items</span>
+    <strong id="bar-total">₦0</strong>
+  </div>
+  <div class="bar-cta">View order</div>
+</div>
+
+<footer>
+  <strong>Adewoye Adebola Canteen &amp; Chop House</strong> — Opposite OAU Campus Gate, Ile-Ife. Open daily 9AM–8PM.<br>
+  This is a demo ordering page built to show clients what their site could look and feel like.
+</footer>
+
+<script>
+  let order = [];
+  let ticketCounter = 104;
+
+  function updateTime(){
+    const now = new Date();
+    document.getElementById('ticket-time').textContent =
+      now.toLocaleDateString([], {month:'short', day:'numeric'}) + ' · ' +
+      now.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+  }
+  updateTime();
+  setInterval(updateTime, 30000);
+
+  function formatNaira(n){
+    return '₦' + n.toLocaleString('en-NG');
+  }
+
+  function addItem(name, price){
+    const existing = order.find(i => i.name === name);
+    if(existing){ existing.qty += 1; }
+    else { order.push({name, price, qty:1}); }
+    renderTicket();
+  }
+
+  function removeItem(name){
+    const existing = order.find(i => i.name === name);
+    if(!existing) return;
+    existing.qty -= 1;
+    if(existing.qty <= 0){ order = order.filter(i => i.name !== name); }
+    renderTicket();
+  }
+
+  function renderTicket(){
+    const container = document.getElementById('ticket-items');
+    if(order.length === 0){
+      container.innerHTML = '<p class="empty-ticket">No items yet.<br>Tap "Add" on any dish.</p>';
+    } else {
+      container.innerHTML = order.map(i => {
+        const safeName = i.name.replace(/'/g, "\\'");
+        return `
+        <div class="ticket-line">
+          <div class="qty-stepper">
+            <button onclick="removeItem('${safeName}')" aria-label="Decrease quantity">−</button>
+            <span class="qty-num">${i.qty}</span>
+            <button onclick="addItem('${safeName}', ${i.price})" aria-label="Increase quantity">+</button>
+          </div>
+          <span class="name">${i.name}</span>
+          <span class="line-price">${formatNaira(i.price * i.qty)}</span>
+        </div>`;
+      }).join('');
+    }
+    const subtotal = order.reduce((sum, i) => sum + i.price * i.qty, 0);
+    const service = Math.round(subtotal * 0.05);
+    const total = subtotal + service;
+    document.getElementById('subtotal').textContent = formatNaira(subtotal);
+    document.getElementById('service').textContent = formatNaira(service);
+    document.getElementById('total').textContent = formatNaira(total);
+
+    // Mobile cart bar
+    const totalQty = order.reduce((s, i) => s + i.qty, 0);
+    const bar = document.getElementById('mobile-cart-bar');
+    document.getElementById('bar-count').textContent = totalQty + (totalQty === 1 ? ' item' : ' items');
+    document.getElementById('bar-total').textContent = formatNaira(total);
+    if(order.length === 0){ bar.classList.add('hidden'); }
+    else { bar.classList.remove('hidden'); }
+
+    // Clear cart button state
+    document.getElementById('clear-cart-btn').disabled = order.length === 0;
+  }
+
+  function clearCart(){
+    if(order.length === 0) return;
+    if(confirm('Clear all items from your order?')){
+      order = [];
+      renderTicket();
+    }
+  }
+
+  function toggleTicket(show){
+    const wrap = document.getElementById('ticket-wrap');
+    if(show === true){ wrap.classList.add('open'); }
+    else if(show === false){ wrap.classList.remove('open'); }
+    else { wrap.classList.toggle('open'); }
+  }
+
+  function closeIfBackdrop(e){
+    // Only close when the backdrop itself (not the ticket card) is tapped
+    if(e.target.id === 'ticket-wrap'){ toggleTicket(false); }
+  }
+
+  const CANTEEN_WHATSAPP_NUMBER = '2348141664061'; // 0814 166 4061 in international format, no leading 0
+  let pendingWaUrl = null;
+
+  function placeOrder(){
+    if(order.length === 0){
+      alert('Add at least one item before sending your order to the kitchen.');
+      return;
+    }
+
+    const nameInput = document.getElementById('customer-name');
+    const phoneInput = document.getElementById('customer-phone');
+    const name = nameInput.value.trim();
+    const phone = phoneInput.value.trim();
+    const fulfilEl = document.querySelector('input[name="fulfil"]:checked');
+    const fulfil = fulfilEl ? fulfilEl.value : 'Pickup';
+
+    if(name === ''){
+      alert('Please enter your name so the canteen knows who the order is for.');
+      nameInput.focus();
+      return;
+    }
+    if(phone === ''){
+      alert('Please enter a phone number in case the canteen needs to reach you.');
+      phoneInput.focus();
+      return;
+    }
+
+    const pendingTicketNum = ticketCounter;
+    const subtotal = order.reduce((sum, i) => sum + i.price * i.qty, 0);
+    const service = Math.round(subtotal * 0.05);
+    const total = subtotal + service;
+
+    let message = `New order — Adewoye Adebola Canteen & Chop House\nTicket #${pendingTicketNum}\n\n`;
+    order.forEach(i => {
+      message += `${i.qty}x ${i.name} — ${formatNaira(i.price * i.qty)}\n`;
+    });
+    message += `\nSubtotal: ${formatNaira(subtotal)}`;
+    message += `\nService (5%): ${formatNaira(service)}`;
+    message += `\nTotal: ${formatNaira(total)}`;
+    message += `\n\nName: ${name}`;
+    message += `\nPhone: ${phone}`;
+    message += `\n${fulfil}`;
+
+    pendingWaUrl = `https://wa.me/${CANTEEN_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const opened = window.open(pendingWaUrl, '_blank');
+
+    if(!opened){
+      // Popup blocked or WhatsApp unavailable — keep the cart intact, offer a manual link
+      document.getElementById('confirm-manual-link').href = pendingWaUrl;
+      openConfirm(false);
+      return;
+    }
+
+    // Success — this order is now confirmed as sent
+    ticketCounter += 1;
+    document.getElementById('ticket-num').textContent = ticketCounter;
+    document.getElementById('confirm-ticket-num').textContent = pendingTicketNum;
+    document.getElementById('confirm-total').textContent = formatNaira(total);
+
+    order = [];
+    renderTicket();
+    toggleTicket(false);
+    openConfirm(true);
+  }
+
+  function retrySend(){
+    closeConfirm();
+    placeOrder();
+  }
+
+  function openConfirm(success){
+    const overlay = document.getElementById('confirm-overlay');
+    overlay.classList.toggle('state-fail', !success);
+    overlay.classList.add('open');
+  }
+
+  function closeConfirm(){
+    document.getElementById('confirm-overlay').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
